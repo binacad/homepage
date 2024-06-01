@@ -13,7 +13,7 @@
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --text-decoration-color: #ff9af0;
   }
   
   .container {
@@ -65,15 +65,53 @@
     .experiences {
       margin-right: 0;
     }
-  }
+}
 
+
+
+ /***************************************************************************
+ * PAGE HEADER STYLES
+ ****************************************************************************/
+.page_header_block {
+  display: fixed;
+  justify-content: center;
+  box-shadow: 1px 2px 4px black;
+  transition: box-shadow .3s, background .3s, color .3s;
+}
+.page_header_block:hover {
+  box-shadow: 2px 4px 4px black;
+  background: rgba(230, 230, 230, .5);
+}
+
+.page_header_container {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  min-width: 500px;
+  padding: 10px;
+}
+.page_header_item {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 18px 25px;
+
+  transition: background .2s ;
+  cursor: pointer;
+}
+.page_header_item:hover {
+  background: rgba(10, 10, 10, .9);
+  color: white;
+}
+.page_header_item.page_item_selected {
+  background: rgba(100, 030, 250, .7);
+  color: white;
+}
 
 
  /***************************************************************************
  * CONTACT STYLES
  ****************************************************************************/
-
- .contact-info__header,
+.contact-info__header,
 .contact-info__sub-header {
   text-align: center;
 }
@@ -83,6 +121,7 @@
   margin-bottom: 15px;
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
+  
 }
 
 .contact-info__sub-header {
@@ -93,7 +132,7 @@
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:center; /* space-between; */
 }
 
 .contact-info__block--center {
@@ -115,7 +154,7 @@
   margin-right: 10px;
   width: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .contact-info__item-icon path {
@@ -129,8 +168,8 @@
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 170px;
+  height: 170px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
