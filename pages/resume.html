@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Résumé</title>
 
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/resume.css" />
 
-    <script type="text/javascript" src="/js/components/navigation.js"></script>
-    <script type="text/javascript" src="/js/components/visual_elements.js"></script>
+    <script src="/js/components/navigation.js"></script>
+    <script src="/js/components/visual_elements.js"></script>
   </head>
   <body>
     <main>
@@ -28,7 +28,7 @@
             
                     <div class="contact_info_container fh">
                         <div class="contact-info__block">
-                            <a rel="author" class="contact-info__item">
+                            <span rel="author" class="contact-info__item">
                                 <div class="contact-info__item-icon-wrapper">
                                 <svg
                                     class="contact-info__item-icon"
@@ -44,7 +44,7 @@
                                 </svg>
                                 </div>
                                 <span>Lviv, Ukraine</span>
-                            </a>
+                            </span>
                         </div>
             
                         <div class="contact-info__block contact-info__block--center">
@@ -131,41 +131,57 @@
                                 viewBox="0 0 512 512"
                             >
                                 <path
-                                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
-                                24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
-                                26.5 21.5 48 48 48h128c26.5 0 48-21.5
-                                48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
-                                64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
-                                32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
-                                48-48V304c0-26.5-21.5-48-48-48z"
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+                                    24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+                                    26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                                    48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+                                    64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
+                                    32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                                    48-48V304c0-26.5-21.5-48-48-48z"
                                 ></path>
                             </svg>
                         </div>
-                        <p class="intro_text">
-                            My name is Stanislav, I'm a Software Engineer and to some extent a DevOps specialist.
+                        <div class="intro__text_wrapper">
+                            <p class="intro_text">
+                                My name is Stanislav, I'm a Software Engineer and to some extent a DevOps newbie.
+                                I started making websites from my first smartphone using forum-constructors.
+                                Though my first PC I've got when i was studying at 9 grade and the only viable thing you could do in it was 8 recepies of octopus.
+                                Later I started to explore Linux (Arch) and some programming.
+                            </p>
+                                
+                            <p class="intro_text">
+                                After a long journey of tries and failures, by this day I'm using next technologies:
+                                <ul class="list">
+                                    <li>Languages: <span class="text_highlighted">Rust</span>, <span class="text_highlighted">C++</span>, <span class="text_highlighted">C</span>, <span class="text_highlighted">Zig</span>, <span class="text_highlighted">JS/TS</span>, and <span class="text_highlighted">Python</span>.</li>
+                                    <li>OS: Linux, MacOS</li>
+                                    <li>DevOps: Docker, Kubernetes, Vagrant, Terraform</li>
 
-                            <br/>I work with <span class="text_highlighted">Rust</span>, <span class="text_highlighted">C++</span>, <span class="text_highlighted">C</span>, <span class="text_highlighted">Zig</span>, <span class="text_highlighted">JS/TS</span>, and <span class="text_highlighted">Python</span>.
+                                </ul>
+                            </p>
 
-                            <br><br/>Python was my primary orientation for some time (2 years) and I continue to use it in Backend & Scripting.
-                            Though I'm significantly dedicated to more fundational things like Rust/C++/Zig.
+                            <p class="intro_text">
+                            Python was my primary orientation for some time (2 years) and I continue to use it in Backend & Scripting.
+                                Though I'm significantly dedicated to more fundational things like Rust/C++/Zig.
+                            </p>
 
-                            <br/><br/>
-                            I like sports, phylosophical conversations. I almost don't play computer games be it good or bad.
-                            Very kind and empathic (maybe sometimes too much).
-                            Very diligent and devoted.
-
-                                <!--Extend later
-                                ///////////////////////////////////
-                                    I was alwaystrying to do it best and thorough (at least thingsi like).
-                                    I always helped to do tasks to my friend from the group westudiedin.
-                                    There were even some cases people from other groups took my work as a
-                                    reference for getting done tasks on same/similar subjects.
-                                    I was always open to help others in what i was good at.
-                                    I may even try to help with the things i was not very much expertin.
-                                -->
-
-                        </p>
-                    </div>
+                            <p class="intro_text">
+                                I like sports, phylosophical conversations. I almost don't play computer games be that good or bad.
+                            </p>
+                               
+                            <br>
+                            <p class="intro_text">
+                                Here's my summary:
+                                <ul class="list">
+                                    <li>Rather a perfectionist. Pushing limits.</li>
+                                    <li>Communicative, open-minded, friendly - state of the soul.</li>
+                                    <li>Diligenceandresponsibility-mysecondnames.</li>
+                                    <li>What brings the value - brings the inspiration.</li>
+                                    <li>Very kind and empathic nature (maybe sometimes too much).</li>
+                                    <li>Diligence and devote - that's how life prolonged</li>
+                                </ul>   
+                            </p>
+                        </div>
+                    </div>                
                 </div>
             </div>
 
@@ -276,6 +292,21 @@
                                 </content>
                             </item>
                             <item>
+                                <title>C Developer at Bebrainee Academy</title>
+                                <subtitle>March 2022 - July 2023</subtitle>
+                                <content>
+                                    Educational program from BeBrainee Academy. The essense of this program was learning DSA and creating CLI projects.
+
+                                    <h4>Activities:</h4>
+                                    <ul>
+                                        <li>Exploring the basics of DSA in C</li>
+                                        <li>Writing projects in C, Implementing algorythms and solving given tasks</li>
+                                        <li>Using build systems (like make, xmake, etc)</li>
+                                        <li>Strongly-defined curriculum</li>
+                                    </ul>
+                               </content>
+                            </item>
+                            <item>
                                 <title>Python Backend Engineer, WhoerVPN</title>
                                 <subtitle>Date: November 2021 — July 2022</subtitle>
                                 <content>
@@ -301,7 +332,8 @@
                                 </content>
                             </item>
                             <item>
-                                <title>Web Developer at Skiing Ticketing System company</title>
+                                <title>Web/Software Developer at Skiing Ticketing System company</title>
+                                <subtitle>2019</subtitle>
                                 <content>
                                     <h4>Responsibilities:</h4>
                                     <ul>
@@ -361,38 +393,51 @@
                     </div>
                 </div>          
             </div>
-            <!--
             <div class="container">
                 <div class="resume__block">
-                        <div class="additional-info fv">
-                            <div class="additional-info__education">
-                                <h3 class="additional-info__education-header">Education</h3>
-                                <div class="additional-info__education-university">
-                                  <span class="additional-info__education-university-durability"
-                                    >2021</span
-                                  >
-                                  <h3 class="additional-info__education-university-speciality">
-                                    Full-Stack Development
-                                  </h3>
-                                  <p class="additional-info__education-university-name">
-                                    Binary Studio Academy
-                                  </p>
-                                </div>
-                              </div>
-                            
-                              <div class="additional-info__languages">
-                                <h3 class="additional-info__languages-header">Languages</h3>
-                                <p class="additional-info__languages-item">English</p>
-                                <p class="additional-info__languages-item">
-                                  Ukrainian
+                    <div class="additional-info fv">
+                        <h3 class="additional-info__languages-header">Education</h3>
+                        <hr>
+                        <div class="additional-info__education">
+                            <div class="additional-info__education-university">
+                                <span class="additional-info__education-university-durability">2017 - 2021</span>
+                                <h3 class="additional-info__education-university-speciality">
+                                    126 - Information systems and technologies 
+                                </h3>
+                                <p class="additional-info__education-university-name">
+                                    Lviv Polytechnic National University
                                 </p>
-                              </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <br>
+
+                        <div class="additional-info__education">
+                            <div class="additional-info__education-university">
+                                <span class="additional-info__education-university-durability">2022 - 2023</span>
+                                <h3 class="additional-info__education-university-speciality">
+                                    Computer Science Fundamentals
+                                </h3>
+                                <p class="additional-info__education-university-name">
+                                    BeBrainee Academy
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <br>
+
+                        <div class="additional-info__languages">
+                            <h3 class="additional-info__languages-header">Languages</h3>
+
+                            <skill-entry name="English - B2 (Upper-Intermediate)" level="7"></skill-entry>
+                            <skill-entry name="Ukrainian - Native" level="10"></skill-entry>
+                            <!-- <skill-entry name="Russian" level="4"></skill-entry> -->
                         </div>
                     </div>
                 </div>
             </div>
-        -->
-
         </div>
     </main>
   </body>

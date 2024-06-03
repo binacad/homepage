@@ -79,6 +79,10 @@
   justify-content: start;
 }
 
+.intro div {
+  display: block;
+}
+
 .intro__icon-wrapper {
   margin-right: 30px;
   width: 30px;
@@ -87,6 +91,7 @@
 }
 
 .intro__icon {
+  flex: 1;
   height: 1.1428rem;
   vertical-align: text-bottom;
 }
@@ -95,10 +100,32 @@
   fill: var(--text-decoration-color);
 }
 
+.intro__text_wrapper {
+  flex-direction: column;
+}
+
+.intro__text_wrapper ul.list {
+  margin: 10px 0;
+  margin-left: 30px;
+  padding-left: 30px;
+  color: var(--secondary-text-color);
+}
+.intro__text_wrapper ul.list li {
+  padding: 2px 0;
+}
+.intro__text_wrapper list {
+
+  padding: 300px;
+}
+
 .intro_text {
+  text-indent: 30px;
+
+  flex: 2;
   color: var(--secondary-text-color);
   text-align: justify;
 }
+
 
 .skills__header {
   color: var(--secondary-text-color);
@@ -176,7 +203,7 @@
 
 .additional-info__education-header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
