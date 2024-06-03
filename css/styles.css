@@ -13,128 +13,61 @@
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --text-decoration-color: #ff9af0;
   }
-  
-  .container {
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 900px;
-  }
-  
-  .fh {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .fv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .resume {
-    margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
-    padding: 30px 0;
-    max-width: 900px;
-  }
-  
-  .resume__block {
-    border-bottom: 3px solid var(--border-color);
-    padding-bottom: 30px;
-    margin-bottom: 15px;
-  }
-  
-  @media screen and (max-width: 576px) {
-    .main-info,
-    .contact_info_container {
-      flex-direction: column;
-    }
-  
-    .contact_info_container {
-      align-items: center;
-    }
-  
-    .contact-info__block:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  
-    .experiences {
-      margin-right: 0;
-    }
-  }
+
+
+ /***************************************************************************
+ * COMMON STYLES
+ ****************************************************************************/
+ span.text_highlighted {
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 123, 0, 0.7);
+  padding: 1px 4px;
+ }
 
 
 
  /***************************************************************************
- * CONTACT STYLES
- ****************************************************************************/
-
- .contact-info__header,
-.contact-info__sub-header {
-  text-align: center;
-}
-
-.contact-info__header {
-  color: var(--primary-text-color);
-  margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
-}
-
-.contact-info__sub-header {
-  color: var(--secondary-text-color);
-  margin-bottom: 30px;
-}
-
-.contact-info__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.contact-info__block--center {
+ * PAGE NAVIGATION STYLES
+ ***********************************************************************</span>*****/
+.page_header_block {
+  display: fixed;
   justify-content: center;
+  box-shadow: 1px 2px 4px black;
+  transition: box-shadow .3s, background .3s, color .3s;
+}
+.page_header_block:hover {
+  box-shadow: 2px 4px 4px black;
+  background: rgba(230, 230, 230, .5);
 }
 
-.contact-info__item {
-  color: var(--secondary-text-color);
-  text-decoration: none;
+.page_header_container {
   display: flex;
   justify-content: start;
+  gap: 10px;
+  min-width: 500px;
+  padding: 10px;
+}
+.page_header_item {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 18px 25px;
+
+  transition: background .2s ;
+  cursor: pointer;
+}
+.page_header_item:hover {
+  background: rgba(10, 10, 10, .9);
+  color: white;
+}
+.page_header_item.page_item_selected {
+  background: rgba(100, 030, 250, .7);
+  color: white;
 }
 
-.contact-info__item:not(:last-child) {
-  margin-bottom: 20px;
-}
 
-.contact-info__item-icon-wrapper {
-  margin-right: 10px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-info__item-icon path {
-  fill: var(--icon-color);
-}
-
-.contact-info__item-icon {
-  height: 1.1428rem;
-  vertical-align: text-bottom;
-}
-
-.contact-info__avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
-}
 
 
 /****************************************************************************
@@ -146,6 +79,10 @@
   justify-content: start;
 }
 
+.intro div {
+  display: block;
+}
+
 .intro__icon-wrapper {
   margin-right: 30px;
   width: 30px;
@@ -154,6 +91,7 @@
 }
 
 .intro__icon {
+  flex: 1;
   height: 1.1428rem;
   vertical-align: text-bottom;
 }
@@ -162,10 +100,32 @@
   fill: var(--text-decoration-color);
 }
 
+.intro__text_wrapper {
+  flex-direction: column;
+}
+
+.intro__text_wrapper ul.list {
+  margin: 10px 0;
+  margin-left: 30px;
+  padding-left: 30px;
+  color: var(--secondary-text-color);
+}
+.intro__text_wrapper ul.list li {
+  padding: 2px 0;
+}
+.intro__text_wrapper list {
+
+  padding: 300px;
+}
+
 .intro_text {
+  text-indent: 30px;
+
+  flex: 2;
   color: var(--secondary-text-color);
   text-align: justify;
 }
+
 
 .skills__header {
   color: var(--secondary-text-color);
@@ -243,7 +203,7 @@
 
 .additional-info__education-header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 

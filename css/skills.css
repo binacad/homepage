@@ -1,0 +1,22 @@
+
+.skill_entry .skill_scale .skill_scale_item {
+    display: inline-block;
+    height: 10px;
+    width: 35px;
+    border-radius: 2px;
+    background: white;
+    content: "";
+}
+
+.skill_entry .skill_scale .skill_scale_item {
+    background: white;
+    border: 1px solid black;
+    margin-right: 3px;
+}
+
+.skill_entry .skill_scale .skill_scale_item:last-child {
+    margin-right: 0;
+}
+.skill_entry .skill_scale .skill_scale_item.filled {
+    background: black;
+}
